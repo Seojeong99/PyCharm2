@@ -9,25 +9,7 @@ from selenium.webdriver.common.keys import Keys
 driver = webdriver.Firefox(executable_path="C:/driver/geckodriver.exe")
 driver.wait = WebDriverWait(driver, 2)
 
-count1 = 0
-count2 = 0
-count3 = 0
-count4 = 0
-count5 = 0
-count6 = 0
-count7 = 0
-count8 = 0
-count9 = 0
 def getMeaningOfNewlyCoinedWord(keyword):
-    global count1
-    global count2
-    global count3
-    global count4
-    global count5
-    global count6
-    global count7
-    global count8
-    global count9
     URL2 = "https://dict.naver.com/"
     driver.get(URL2)
     time.sleep(3)
@@ -43,30 +25,24 @@ def getMeaningOfNewlyCoinedWord(keyword):
         resultout = outspace(result)
 
         if '\'' in resultout:
-            count1 = count1+1
             resultf = resultout.split("\'")
             print('<Original>' + keyword + '<Meaning>' + resultf[1])
 
         elif "\"" in resultout:
-            count2 = count2+1
             resultf = resultout.split("\"")
             print('<Original>' + keyword + '<Meaning>' + resultf[1])
         elif "‘" in resultout:
-            count3 = count3 + 1
             resultf = resultout.split("‘")
             resultf2 = resultf[1].split("’")
             print('<Original>' + keyword + '<Meaning>' + resultf2[0])
         elif "또는" in resultout:
-            count4 = count4 + 1
             resultf = resultout.split("또는")
             print('<Original>' + keyword + '<Meaning>' + resultf[0])
         elif "1." in resultout:
-            count5 = count5 + 1
             resultf = resultout.split("1.")
             resultf2 = resultf[1].split("2.")
             print('<Original>' + keyword + '<Meaning>' + resultf2[0])
         elif "비유적" in resultout:
-            count6 = count6 + 1
             if ("을") in resultout:
                 resultf = resultout.split("을비유적")
                 print('<Original>' + keyword + '<Meaning>' + resultf[0])
@@ -74,16 +50,12 @@ def getMeaningOfNewlyCoinedWord(keyword):
                 resultf = resultout.split("를비유적")
                 print('<Original>' + keyword + '<Meaning>' + resultf[0])
         elif "뜻으로" in resultout:
-            count7 = count7 + 1
             resultf = resultout.split("는뜻으로")
             print('<Original>' + keyword + '<Meaning>' + resultf[0])
         elif "줄임말" in resultout:
-            count8 = count8 + 1
             resultf = resultout.split("의줄임말")
             print('<Original>' + keyword + '<Meaning>' + resultf[0])
-
         else:
-            count9 = count9 + 1
             if "⇒" in resultout:
                 resultf = resultout.split("⇒")
                 print('<Original>' + keyword + '<Meaning>' + resultf[0])
@@ -109,17 +81,6 @@ with open("input.txt", "r", encoding="UTF-8") as f:
             try:
                 getMeaningOfNewlyCoinedWord(data)
             except: 0
-
-
-print(count1)
-print(count2)
-print(count3)
-print(count4)
-print(count5)
-print(count6)
-print(count7)
-print(count8)
-print(count9)
 
 
 
