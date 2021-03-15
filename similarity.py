@@ -10,16 +10,17 @@ from main import Jaccard_similarity
 
 driver = webdriver.Firefox(executable_path="C:/driver/geckodriver.exe")
 driver.wait = WebDriverWait(driver, 2)
+
+count1 = 0
 def checksimilarity(keyword):
+    global count1
     URL3 = "https://translate.google.com/?sl=ko&tl=en&op=translate"
     driver.get(URL3)
-    time.sleep(3)
+    time.sleep(4)
     driver.find_element_by_css_selector('.er8xn').clear()
-    time.sleep(3)
-    #keyword = keyword.replace("\n", "")
-    str1 = str("이건 " + keyword + "이다.")
-    print(str1)
-    #이건 이다.
+    time.sleep(4)
+    keyword = keyword.replace("\n", "")
+    str1 = str("이것은 " + keyword + "이다.")#str1=이건 키워드이다
     driver.find_element_by_css_selector('.er8xn').send_keys(str1)
     time.sleep(5)
     soup = BeautifulSoup(driver.page_source, "html.parser")
@@ -27,30 +28,31 @@ def checksimilarity(keyword):
 
     URL4 = "https://translate.google.com/?sl=en&tl=ko&op=translate"
     driver.get(URL4)
-    time.sleep(3)
+    time.sleep(4)
     driver.find_element_by_css_selector('.er8xn').clear()
-    time.sleep(3)
+    time.sleep(4)
     driver.find_element_by_css_selector('.er8xn').send_keys(result1)
     time.sleep(5)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     result2 = soup.find('div', class_='NqnNQd').text
-    #print('<original>' + str1 + '<original tr>' + str(result1) + '<final tr>' + str(result2))
     #similarity = Jaccard_similarity(str1, str(result2))
+    original(str1, result1, result2)
     print(Jaccard_similarity(str1, str(result2)))
-    #if similarity < 0.8 :
 
-     #count1 = count1 + Jaccard_similarity(str1, str(result2))
+    count1 = count1 + Jaccard_similarity(str1, str(result2))
 
 
-def original:
-with open("input5.txt", "r", encoding="UTF-8") as f:
+def original(string1, resultf1, resultf2):
+    print('<original>' + string1 + '<original tr>' + str(resultf1) + '<final tr>' + str(resultf2))
+
+with open("input.txt", "r", encoding="UTF-8") as f:#오리지널 단어 번역출력, 유사도 출력
     list = f.readlines()
     for i, data in enumerate(list):
             try:
-
                 checksimilarity(data)
-            except:
-                0
+            except: 0
+    print(round(count1 / 400, 4))
+    count1 = 0
 
 with open("input5.txt", "r", encoding="UTF-8") as f:
     list = f.readlines()
@@ -59,8 +61,7 @@ with open("input5.txt", "r", encoding="UTF-8") as f:
                 checksimilarity(data)
             except: 0
 
-#print(round(count1 / 400, 4))
-#count1 = 0
+    print(round(count1 / 400, 4))
 
 #with open("inputfinal.txt", "r", encoding="UTF-8") as f:
 #    list = f.readlines()
