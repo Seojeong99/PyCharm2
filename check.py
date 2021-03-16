@@ -71,12 +71,12 @@ def outspace(resultinput):
         return resultinput
 
 def cut(resultinput):
-    #if "<" in resultinput:
+    if "<" in resultinput:
         key1 = resultinput.split("<Meaning>")
         key2 = key1[1].split("</Meaning>")
         return key2[0]
-    #else:
-        #return resultinput
+    else:
+        return resultinput
 
 with open("input4.txt", "r", encoding="UTF-8") as f:
     list = f.readlines()
