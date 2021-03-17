@@ -9,6 +9,9 @@ from selenium.webdriver.common.keys import Keys
 driver = webdriver.Firefox(executable_path="C:/driver/geckodriver.exe")
 driver.wait = WebDriverWait(driver, 2)
 
+def printf():
+    return 1
+
 def googlenumber(keyword):
     URL = "https://www.google.com/"
     driver.get(URL)
@@ -70,26 +73,26 @@ def getMeaningOfNewlyCoinedWord(keyword):
     soup = BeautifulSoup(driver.page_source, "html.parser")
     try:
         result = soup.select('li > p')[1].text
-        #result = `re.sub(r"\s+|\s+$", "", result)`
-        #print('<Original>' + keyword + '</Original><Meaning>' + result + '</Meaning>')
-        print('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + purePhrase(result) + '</Meaning>')
-        #print(len(result))
+        #print('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + purePhrase(result) + '</Meaning>')
+        st1 = str('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + purePhrase(result) + '</Meaning>')
+        return st1
     except:
-        print('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + 'None' + '</Meaning>')
-
+        #print('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + 'None' + '</Meaning>')
+        str2 = str('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + 'None' + '</Meaning>')
+        return str2
     time.sleep(3)
 
-    URL3 = "https://translate.google.com/?sl=ko&tl=en&op=translate"
-    driver.get(URL3)
-    time.sleep(3)
+   # URL3 = "https://translate.google.com/?sl=ko&tl=en&op=translate"
+   # driver.get(URL3)
+   # time.sleep(3)
 
-    driver.find_element_by_css_selector('.er8xn').clear()
-    time.sleep(3)
-    driver.find_element_by_css_selector('.er8xn').send_keys(result)
-    time.sleep(10)
-    soup = BeautifulSoup(driver.page_source, "html.parser")
-    transresult = soup.find('div', class_='NqnNQd').text
-    print('<Original>' + keyword.replace("\n", "") + '</Original><Final translated>' + str(transresult) + '</Final translated>')
+    #driver.find_element_by_css_selector('.er8xn').clear()
+    #time.sleep(3)
+    #driver.find_element_by_css_selector('.er8xn').send_keys(result)
+    #time.sleep(10)
+    #soup = BeautifulSoup(driver.page_source, "html.parser")
+    #transresult = soup.find('div', class_='NqnNQd').text
+    #print('<Original>' + keyword.replace("\n", "") + '</Original><Final translated>' + str(transresult) + '</Final translated>')
 
 
 

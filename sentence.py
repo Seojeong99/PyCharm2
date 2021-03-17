@@ -9,52 +9,47 @@ JONGSUNG_LIST = [' ', 'ㄱ', 'ㄲ', 'ㄳ', 'ㄴ', 'ㄵ', 'ㄶ', 'ㄷ', 'ㄹ', '�
 
 
 def letcut(string):
-
     size = len(string)
     final_str = string[size - 1:]
-    print(final_str)  #마지막글자 자르기
-    sp_list = list(final_str)
+    sp_list = final_str
     result = []
+
     for keyword in sp_list:
         if re.match('.*[ㄱ-ㅎ ㅏ-ㅣ 가-힣]+.*',keyword) is not None:
-            print("if는 들어감")
             char_code = ord(keyword) - BASE_CODE
             char1 = int(char_code / CHOSUNG)
             result.append(CHOSUNG_LIST[char1])
-            print('초성 : {}'.format(CHOSUNG_LIST[char1]))#초성
+            #print('초성 : {}'.format(CHOSUNG_LIST[char1]))#초성
 
             char2 = int((char_code - (CHOSUNG * char1)) / JUNGSUNG)
             result.append(JUNGSUNG_LIST[char2])
-            print('중성 : {}'.format(JUNGSUNG_LIST[char2]))#중성
+            #print('중성 : {}'.format(JUNGSUNG_LIST[char2]))#중성
 
             char3 = int((char_code - (CHOSUNG * char1) - (JUNGSUNG * char2)))
             result.append(JONGSUNG_LIST[char3])
-            print('종성 : {}'.format(JONGSUNG_LIST[char3]))
+            #print('종성 : {}'.format(JONGSUNG_LIST[char3]))
 
         else:
-            print("if안들어감")
             result.append(keyword)
 
-    print("".join(result))
+    #print("".join(result))
 
     if JONGSUNG_LIST[char3] == ' ':
-        print("없어")
+        #print("이것은 " + string + "다.")
+        st1 = "이것은 " + string + "다."
+        return st1
     else:
-        print("있어")
+        #print("이것은 " + string + "이다.")
+        st2 = "이것은 " + string +"이다."
+        return st2
 
 
-
-#word = ['낄끼빠빠', '아아', '맛있냥', '멀라염', '뻐카충']
-#for i in word:
-#    letcut(i)
-
-
-#letcut("안녕하세요")
-with open("letscut.txt", "r", encoding="UTF-8") as f:
+with open("input5.txt", "r", encoding="UTF-8") as f:
     list = f.readlines()
+    #print(str(list))
     for i, data in enumerate(list):
          try:
-             data=data.replace("\n", "")
-             letcut(data)
+             data = data.replace("\n", "")
+             letcut(str(data))
          except:0
 

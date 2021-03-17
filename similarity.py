@@ -1,5 +1,5 @@
 import re
-
+import sentence
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 import time
@@ -20,7 +20,7 @@ def checksimilarity(keyword):
     driver.find_element_by_css_selector('.er8xn').clear()
     time.sleep(4)
     keyword = keyword.replace("\n", "")
-    str1 = str("이것은 " + keyword + "이다.")#str1=이건 키워드이다
+    str1 = sentence.letcut(keyword)
     driver.find_element_by_css_selector('.er8xn').send_keys(str1)
     time.sleep(5)
     soup = BeautifulSoup(driver.page_source, "html.parser")
@@ -35,7 +35,7 @@ def checksimilarity(keyword):
     time.sleep(5)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     result2 = soup.find('div', class_='NqnNQd').text
-    #similarity = Jaccard_similarity(str1, str(result2))
+    similarity = Jaccard_similarity(str1, str(result2))
     original(str1, result1, result2)
     print(Jaccard_similarity(str1, str(result2)))
 

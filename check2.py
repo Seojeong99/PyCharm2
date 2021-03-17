@@ -5,14 +5,55 @@ import re
 from bs4 import BeautifulSoup
 
 from selenium.webdriver.common.keys import Keys
+import google
 
 driver = webdriver.Firefox(executable_path="C:/driver/geckodriver.exe")
 driver.wait = WebDriverWait(driver, 2)
 
-def print(ketword):
-    print("11111111111")
+
+def getMeaning(keyword):
+    meaningofsentence = getMeaningOfNewlyCoinedWord(keyword)
+    print(meaningofsentence)
 
 def getMeaningOfNewlyCoinedWord(keyword):
+    URL2 = "https://dict.naver.com/"
+    driver.get(URL2)
+    time.sleep(3)
+    key2 = driver.find_element_by_xpath('//*[@id="ac_input"]')
+    key2.send_keys(keyword)
+    time.sleep(3)
+    driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[1]/div[1]/div[2]/form/a').click()
+    time.sleep(3)
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+    try:
+        result = soup.select('li > p')[1].text
+        #print('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + purePhrase(result) + '</Meaning>')
+        st1 = str('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + purePhrase(result) + '</Meaning>')
+        return st1
+    except:
+        #print('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + 'None' + '</Meaning>')
+        str2 = str('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + 'None' + '</Meaning>')
+        return str2
+    time.sleep(3)
+
+def purePhrase(data):
+    retValue = ""
+    start = 0
+    origin = 0
+    if "]" in str(data):
+        origin = str(data).index("]") + 1
+    for i in range(origin, len(str(data)) - 1):
+        if str(data[i:i+1]).isspace() == False:
+            start = i
+            break
+    retValue = str(data[start:])
+    if "." in retValue:
+        retValue = retValue[:retValue.index(".")]
+
+    return retValue
+
+
+def getMeaningOfNewlyCoined(keyword):
         keyword2 = cut(keyword)
         if '\'' in keyword2:
             resultf = keyword2.split("\'")
@@ -81,12 +122,9 @@ def cut(resultinput):
     else:
         return resultinput
 
-with open("input4.txt", "r", encoding="UTF-8") as f:
+with open("input.txt", "r", encoding="UTF-8") as f:
     list = f.readlines()
     for i, data in enumerate(list):
             try:
-                getMeaningOfNewlyCoinedWord(data)
+                getMeaning(data)
             except: 0
-
-
-
