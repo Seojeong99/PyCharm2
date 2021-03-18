@@ -11,7 +11,6 @@ from main import Jaccard_similarity
 driver = webdriver.Firefox(executable_path="C:/driver/geckodriver.exe")
 driver.wait = WebDriverWait(driver, 2)
 
-list1 = list()
 def checksimilarity(keyword):
         global count1
         URL3 = "https://translate.google.com/?sl=ko&tl=en&op=translate"
@@ -36,11 +35,10 @@ def checksimilarity(keyword):
         soup = BeautifulSoup(driver.page_source, "html.parser")
         result2 = soup.find('div', class_='NqnNQd').text
         similarity = Jaccard_similarity(str1, str(result2))
-        categorize(similarity,keyword)
+        #categorize(similarity,keyword)
         print(similarity)
 
-def categorize(s,keyword):
-    if s > 0.9
+
 
 
 

@@ -7841,12 +7841,18 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1615962503395	Marionette	INFO	Listening on port 56768
 1615962503465	Marionette	WARN	TLS certificate errors will be ignored for this session
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
-ner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilearLGim"
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A015A,name=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+rs\\이서정\\AppData\\Local\\Temp\\rust_mozprofilearLGim"
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 1615962556255	Marionette	INFO	Listening on port 56823
 1615962556366	Marionette	WARN	TLS certificate errors will be ignored for this session
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
-ner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilecoer6w"
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A015A,name=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+rs\\이서정\\AppData\\Local\\Temp\\rust_mozprofilecoer6w"
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 1615962686531	Marionette	INFO	Listening on port 56880
 1615962686983	Marionette	WARN	TLS certificate errors will be ignored for this session
@@ -8231,3 +8237,493 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1615968102668	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
 JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616062088481	geckodriver	INFO	Listening on 127.0.0.1:64695
+1616062091560	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileXe8NCl"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616062096643	Marionette	INFO	Listening on port 64703
+1616062096893	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616062194993	geckodriver	INFO	Listening on 127.0.0.1:64783
+1616062198064	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileIxZ46J"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616062202475	Marionette	INFO	Listening on port 64791
+1616062202862	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616062229492	geckodriver	INFO	Listening on 127.0.0.1:64856
+1616062232530	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilez5XQi2"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616062236585	Marionette	INFO	Listening on port 64864
+1616062236759	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616063776176	geckodriver	INFO	Listening on 127.0.0.1:65444
+1616063779251	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilexGd20x"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616063783398	Marionette	INFO	Listening on port 65452
+1616063783482	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616063853770	geckodriver	INFO	Listening on 127.0.0.1:65515
+1616063856824	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilewJniR8"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616063860948	Marionette	INFO	Listening on port 65523
+1616063861046	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616064014777	geckodriver	INFO	Listening on 127.0.0.1:49218
+1616064017823	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofile4a0ixk"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616064021777	Marionette	INFO	Listening on port 49226
+1616064022024	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616064073219	geckodriver	INFO	Listening on 127.0.0.1:49290
+1616064076293	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileLaCtQa"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616064080205	Marionette	INFO	Listening on port 49298
+1616064080498	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616064294121	geckodriver	INFO	Listening on 127.0.0.1:49366
+1616064297200	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileYICI0d"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616064301269	Marionette	INFO	Listening on port 49374
+1616064301396	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616064514007	geckodriver	INFO	Listening on 127.0.0.1:49439
+1616064517082	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofile2M6ZMk"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616064521388	Marionette	INFO	Listening on port 49447
+1616064521877	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616064943936	geckodriver	INFO	Listening on 127.0.0.1:49530
+1616064947029	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilenM0lRP"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616064951441	Marionette	INFO	Listening on port 49538
+1616064951856	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616064984605	geckodriver	INFO	Listening on 127.0.0.1:49598
+1616064987668	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileLrd6qr"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616064991913	Marionette	INFO	Listening on port 49606
+1616064991984	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616065112701	geckodriver	INFO	Listening on 127.0.0.1:49811
+1616065115754	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileoUaUiP"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065120283	Marionette	INFO	Listening on port 49845
+1616065120598	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616065138514	geckodriver	INFO	Listening on 127.0.0.1:49911
+1616065141587	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilebRAmys"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065145493	Marionette	INFO	Listening on port 49919
+1616065145794	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616065148403	Marionette	INFO	Stopped listening on port 49919
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616065240762	geckodriver	INFO	Listening on 127.0.0.1:49975
+1616065243833	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileoTHh76"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065247986	Marionette	INFO	Listening on port 49983
+1616065248024	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616065251649	Marionette	INFO	Stopped listening on port 49983
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616065256513	geckodriver	INFO	Listening on 127.0.0.1:50035
+1616065259566	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileqntFi6"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065263629	Marionette	INFO	Listening on port 50043
+1616065263785	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616065288297	Marionette	INFO	Stopped listening on port 50043
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616065363585	geckodriver	INFO	Listening on 127.0.0.1:50135
+1616065366624	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileJxeNN5"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065370746	Marionette	INFO	Listening on port 50143
+1616065370841	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 573: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 716: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+1616065373142	Marionette	INFO	Stopped listening on port 50143
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616065376163	geckodriver	INFO	Listening on 127.0.0.1:50195
+1616065379228	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileWRAVpH"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065383495	Marionette	INFO	Listening on port 50203
+1616065383561	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616065383674	geckodriver	INFO	Listening on 127.0.0.1:50226
+1616065419460	geckodriver	INFO	Listening on 127.0.0.1:50253
+1616065422509	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileOOUrFM"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065426635	Marionette	INFO	Listening on port 50261
+1616065426711	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616065426767	geckodriver	INFO	Listening on 127.0.0.1:50282
+1616065429811	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileRPSmd4"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065433914	Marionette	INFO	Listening on port 50311
+1616065433995	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616065540401	geckodriver	INFO	Listening on 127.0.0.1:50389
+1616065543457	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileXgmLNd"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065547246	Marionette	INFO	Listening on port 50397
+1616065547651	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616065547703	geckodriver	INFO	Listening on 127.0.0.1:50430
+1616065550758	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilewLcjY2"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065554932	Marionette	INFO	Listening on port 50453
+1616065554963	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616065748543	geckodriver	INFO	Listening on 127.0.0.1:50523
+1616065751610	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileK9AWvv"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065755537	Marionette	INFO	Listening on port 50531
+1616065755830	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616065755889	geckodriver	INFO	Listening on 127.0.0.1:50556
+1616065758945	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofile5ueD56"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065763003	Marionette	INFO	Listening on port 50582
+1616065763152	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616065955773	geckodriver	INFO	Listening on 127.0.0.1:50668
+1616065958836	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofile5PPnyh"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065963356	Marionette	INFO	Listening on port 50676
+1616065963678	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616065963728	geckodriver	INFO	Listening on 127.0.0.1:50704
+1616065966761	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofiletj0wdw"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616065971016	Marionette	INFO	Listening on port 50731
+1616065971081	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616066075230	geckodriver	INFO	Listening on 127.0.0.1:50805
+1616066078283	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileCl86Qe"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616066082478	Marionette	INFO	Listening on port 50813
+1616066082580	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616066082648	geckodriver	INFO	Listening on 127.0.0.1:50835
+1616066085685	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilekmZtpM"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616066090037	Marionette	INFO	Listening on port 50855
+1616066090487	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616066203520	geckodriver	INFO	Listening on 127.0.0.1:50941
+1616066206572	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileAjguyX"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616066210659	Marionette	INFO	Listening on port 50949
+1616066210771	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616066210836	geckodriver	INFO	Listening on 127.0.0.1:50972
+1616066213882	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofiles2SmrL"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616066218330	Marionette	INFO	Listening on port 51000
+1616066218732	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616066420604	geckodriver	INFO	Listening on 127.0.0.1:51075
+1616066423659	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileZAlxjV"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616066428242	Marionette	INFO	Listening on port 51083
+1616066428497	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616066711970	Marionette	INFO	Stopped listening on port 51083
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilelhIebj"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616066446455	Marionette	INFO	Listening on port 51136
+1616066446552	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616066711932	Marionette	INFO	Stopped listening on port 51136
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofiles2DyAF"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616066467407	Marionette	INFO	Listening on port 51188
+1616066467749	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616066711975	Marionette	INFO	Stopped listening on port 51188
+6066509810	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileDRPUQe"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616066513947	Marionette	INFO	Listening on port 51244
+1616066514017	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616066514087	geckodriver	INFO	Listening on 127.0.0.1:51266
+1616066517133	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileuHNFcx"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616066521284	Marionette	INFO	Listening on port 51294
+1616066521360	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616066623061	geckodriver	INFO	Listening on 127.0.0.1:51368
+1616066626113	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilezLsH6N"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616066630312	Marionette	INFO	Listening on port 51376
+1616066630440	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616066630512	geckodriver	INFO	Listening on 127.0.0.1:51402
+1616066633566	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileAbOnIf"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616066637804	Marionette	INFO	Listening on port 51427
+1616066637854	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616070083176	geckodriver	INFO	Listening on 127.0.0.1:51818
+1616070086316	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofile9VzFmW"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616070091483	Marionette	INFO	Listening on port 51826
+1616070091714	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616070091780	geckodriver	INFO	Listening on 127.0.0.1:51860
+1616070094848	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilewOdul4"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616070098856	Marionette	INFO	Listening on port 51881
+1616070099050	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616070482777	geckodriver	INFO	Listening on 127.0.0.1:52111
+1616070485817	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileXt6pnm"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616070490110	Marionette	INFO	Listening on port 52119
+1616070490639	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616070490690	geckodriver	INFO	Listening on 127.0.0.1:52151
+1616070493740	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileuVxXfF"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616070497739	Marionette	INFO	Listening on port 52178
+1616070497957	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616070618267	geckodriver	INFO	Listening on 127.0.0.1:52267
+1616070621329	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileCEmX9v"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616070626385	Marionette	INFO	Listening on port 52275
+1616070626696	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616070626752	geckodriver	INFO	Listening on 127.0.0.1:52300
+1616070629790	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilexorWCt"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616070633992	Marionette	INFO	Listening on port 52327
+1616070634119	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616070811263	geckodriver	INFO	Listening on 127.0.0.1:52424
+1616070814343	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofile8nxbaP"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616070818492	Marionette	INFO	Listening on port 52432
+1616070818542	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616070818608	geckodriver	INFO	Listening on 127.0.0.1:52453
+1616070821666	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileqJauvw"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616070825796	Marionette	INFO	Listening on port 52482
+1616070825900	Marionette	WARN	TLS certificate errors will be ignored for this session
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1616070965911	geckodriver	INFO	Listening on 127.0.0.1:52564
+1616070968975	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofiledXRhLP"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616070973188	Marionette	INFO	Listening on port 52572
+1616070973286	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616070973346	geckodriver	INFO	Listening on 127.0.0.1:52595
+1616070976365	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilehRQHs3"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616070980914	Marionette	INFO	Listening on port 52624
+1616070981186	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616071028807	geckodriver	INFO	Listening on 127.0.0.1:52695
+1616071031865	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileRSc6nt"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616071036072	Marionette	INFO	Listening on port 52703
+1616071036179	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616071036240	geckodriver	INFO	Listening on 127.0.0.1:52726
+1616071039291	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileczS7KZ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616071043769	Marionette	INFO	Listening on port 52755
+1616071044112	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616071158248	geckodriver	INFO	Listening on 127.0.0.1:52865
+1616071161340	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileMXuSty"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616071165916	Marionette	INFO	Listening on port 52873
+1616071166155	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616071166210	geckodriver	INFO	Listening on 127.0.0.1:52898
+1616071169233	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilecfZPDz"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616071173487	Marionette	INFO	Listening on port 52925
+1616071173562	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616071505895	geckodriver	INFO	Listening on 127.0.0.1:53013
+1616071508967	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilemv14LJ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616071513394	Marionette	INFO	Listening on port 53021
+1616071513779	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616071513838	geckodriver	INFO	Listening on 127.0.0.1:53046
+1616071516863	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileeDy2hv"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616071521191	Marionette	INFO	Listening on port 53074
+1616071521703	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616071685901	geckodriver	INFO	Listening on 127.0.0.1:53157
+1616071688972	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilecmmoeb"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616071693299	Marionette	INFO	Listening on port 53165
+1616071693799	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616071693860	geckodriver	INFO	Listening on 127.0.0.1:53197
+1616071696892	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilepuB0Hb"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616071701390	Marionette	INFO	Listening on port 53217
+1616071701706	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616071845646	geckodriver	INFO	Listening on 127.0.0.1:53292
+1616071848732	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileQQBKZP"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616071852927	Marionette	INFO	Listening on port 53300
+1616071853050	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616071853121	geckodriver	INFO	Listening on 127.0.0.1:53324
+1616071856137	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileVDnYSE"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616071860252	Marionette	INFO	Listening on port 53352
+1616071860377	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072055633	geckodriver	INFO	Listening on 127.0.0.1:53530
+1616072058686	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileDpuTJE"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072063279	Marionette	INFO	Listening on port 53538
+1616072063510	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072063569	geckodriver	INFO	Listening on 127.0.0.1:53566
+1616072066617	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileG11gz8"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072070652	Marionette	INFO	Listening on port 53593
+1616072070854	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072127617	geckodriver	INFO	Listening on 127.0.0.1:53685
+1616072130702	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileWDMpvr"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072134704	Marionette	INFO	Listening on port 53693
+1616072134928	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072134999	geckodriver	INFO	Listening on 127.0.0.1:53716
+1616072138041	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilem9N8jC"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072142136	Marionette	INFO	Listening on port 53744
+1616072142313	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072193871	geckodriver	INFO	Listening on 127.0.0.1:53811
+1616072196910	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileRcjBBe"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072201045	Marionette	INFO	Listening on port 53819
+1616072201134	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072201193	geckodriver	INFO	Listening on 127.0.0.1:53841
+1616072204249	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileYlRhwc"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072208279	Marionette	INFO	Listening on port 53869
+1616072208459	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072293164	geckodriver	INFO	Listening on 127.0.0.1:53948
+1616072296221	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofile4xhLt6"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072300551	Marionette	INFO	Listening on port 53956
+1616072301071	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072301125	geckodriver	INFO	Listening on 127.0.0.1:53989
+1616072304170	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileaLn687"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072308558	Marionette	INFO	Listening on port 54009
+1616072309008	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072319373	geckodriver	INFO	Listening on 127.0.0.1:54079
+1616072322460	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofile2SkuBW"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072326438	Marionette	INFO	Listening on port 54087
+1616072326667	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072326733	geckodriver	INFO	Listening on 127.0.0.1:54111
+1616072329748	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileRSYS2a"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072334110	Marionette	INFO	Listening on port 54138
+1616072334603	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072394920	geckodriver	INFO	Listening on 127.0.0.1:54211
+1616072397995	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileYVw4PS"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072402545	Marionette	INFO	Listening on port 54219
+1616072402798	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072402859	geckodriver	INFO	Listening on 127.0.0.1:54248
+1616072405893	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileeodIIk"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072409959	Marionette	INFO	Listening on port 54271
+1616072410105	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072648576	geckodriver	INFO	Listening on 127.0.0.1:54372
+1616072651660	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofile7h1aLx"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072656260	Marionette	INFO	Listening on port 54380
+1616072656500	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/PluginChild.jsm, line 59: TypeError: this.contentWindow is null
+1616072686663	geckodriver	INFO	Listening on 127.0.0.1:54444
+1616072689738	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilet2gi2r"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072694084	Marionette	INFO	Listening on port 54453
+1616072694563	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616072694637	geckodriver	INFO	Listening on 127.0.0.1:54486
+1616072697683	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofile8bWfuz"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616072701858	Marionette	INFO	Listening on port 54506
+1616072701897	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616073163140	geckodriver	INFO	Listening on 127.0.0.1:54624
+1616073166202	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileAnGbc9"
+1616073296726	geckodriver	INFO	Listening on 127.0.0.1:54705
+1616073299802	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilezmWy3N"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616073304034	Marionette	INFO	Listening on port 54713
+1616073304127	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616073304194	geckodriver	INFO	Listening on 127.0.0.1:54738
+1616073307221	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilej20q6S"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616073311373	Marionette	INFO	Listening on port 54766
+1616073311430	Marionette	WARN	TLS certificate errors will be ignored for this session
