@@ -11,6 +11,7 @@ from main import Jaccard_similarity
 driver = webdriver.Firefox(executable_path="C:/driver/geckodriver.exe")
 driver.wait = WebDriverWait(driver, 2)
 
+
 def checksimilarity(keyword):
         global count1
         URL3 = "https://translate.google.com/?sl=ko&tl=en&op=translate"
@@ -34,11 +35,56 @@ def checksimilarity(keyword):
         time.sleep(5)
         soup = BeautifulSoup(driver.page_source, "html.parser")
         result2 = soup.find('div', class_='NqnNQd').text
-        similarity = Jaccard_similarity(str1, str(result2))
-        #categorize(similarity,keyword)
-        print(similarity)
+        x = Jaccard_similarity(str1, str(result2))
+        ififsimilarityis(x,keyword)
+        print(x)
+
+def getMeaningOfNewlyCoinedWord(keyword):
+    print("1")
+    time.sleep(3)
+    URL2 = "https://dict.naver.com/"
+    driver.get(URL2)
+    time.sleep(4)
+    key2 = driver.find_element_by_xpath('//*[@id="ac_input"]')
+    key2.send_keys(keyword)
+    time.sleep(4)
+    driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[1]/div[1]/div[2]/form/a').click()
+    time.sleep(4)
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+    try:
+        result = soup.select('li > p')[1].text
+        print('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + purePhrase(result) + '</Meaning>')
+        #st1 = str('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + purePhrase(result) + '</Meaning>')
+        #return st1
+    except:
+        print('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + 'None' + '</Meaning>')
+        #str2 = str('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + 'None' + '</Meaning>')
+        #return str2
+    time.sleep(3)
+
+def purePhrase(data):
+    retValue = ""
+    start = 0
+    origin = 0
+    if "]" in str(data):
+        origin = str(data).index("]") + 1
+    for i in range(origin, len(str(data)) - 1):
+        if str(data[i:i+1]).isspace() == False:
+            start = i
+            break
+    retValue = str(data[start:])
+    if "." in retValue:
+        retValue = retValue[:retValue.index(".")]
+
+    return retValue
 
 
+def ififsimilarityis(s,keyword):
+        if s > 0.5:
+                getMeaningOfNewlyCoinedWord(keyword)
+
+        else:
+                print(0)
 
 
 
