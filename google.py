@@ -9,9 +9,6 @@ from selenium.webdriver.common.keys import Keys
 driver = webdriver.Firefox(executable_path="C:/driver/geckodriver.exe")
 driver.wait = WebDriverWait(driver, 2)
 
-def printf():
-    return 1
-
 def googlenumber(keyword):
     URL = "https://www.google.com/"
     driver.get(URL)
@@ -73,13 +70,9 @@ def getMeaningOfNewlyCoinedWord(keyword):
     soup = BeautifulSoup(driver.page_source, "html.parser")
     try:
         result = soup.select('li > p')[1].text
-        #print('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + purePhrase(result) + '</Meaning>')
-        st1 = str('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + purePhrase(result) + '</Meaning>')
-        return st1
+        print('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + purePhrase(result) + '</Meaning>')
     except:
-        #print('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + 'None' + '</Meaning>')
-        str2 = str('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + 'None' + '</Meaning>')
-        return str2
+        print('<Original>' + keyword.replace("\n", "") + '</Original><Meaning>' + 'None' + '</Meaning>')
     time.sleep(3)
 
    # URL3 = "https://translate.google.com/?sl=ko&tl=en&op=translate"
@@ -110,25 +103,25 @@ def originalTranslatedResult(keyword):
     print('<Original>' + keyword.replace("\n", "") + '</Original><Translated>' + str(result) + '</Translated>')
 
 
-with open("input.txt", "r", encoding="UTF-8") as f:
+#with open("input.txt", "r", encoding="UTF-8") as f:
+#    list = f.readlines()
+#    for i, data in enumerate(list):
+#            try:
+                #originalTranslatedResult(data)
+#                getMeaningOfNewlyCoinedWord(data)
+#            except: 0
+
+#    for i, data in enumerate(list):
+#        try:
+#            print('')
+            #googlenumber(data)
+#        except: 0
+
+with open("onlynoun.txt", "r", encoding="UTF-8") as f:
     list = f.readlines()
     for i, data in enumerate(list):
             try:
                 #originalTranslatedResult(data)
-                getMeaningOfNewlyCoinedWord(data)
-            except: 0
-
-    for i, data in enumerate(list):
-        try:
-            print('')
-            #googlenumber(data)
-        except: 0
-
-with open("input.txt", "r", encoding="UTF-8") as f:
-    list = f.readlines()
-    for i, data in enumerate(list):
-            try:
-                originalTranslatedResult(data)
                 getMeaningOfNewlyCoinedWord(data)
             except: 0
 

@@ -9,8 +9,6 @@ from selenium.webdriver.common.keys import Keys
 driver = webdriver.Firefox(executable_path="C:/driver/geckodriver.exe")
 driver.wait = WebDriverWait(driver, 2)
 
-def print(ketword):
-    print("11111111111")
 
 def getMeaningOfNewlyCoinedWord(keyword):
         keyword2 = cut(keyword)
@@ -81,7 +79,7 @@ def cut(resultinput):
     else:
         return resultinput
 
-with open("input4.txt", "r", encoding="UTF-8") as f:
+with open("inputnounmeaning.txt", "r", encoding="UTF-8") as f:
     list = f.readlines()
     for i, data in enumerate(list):
             try:

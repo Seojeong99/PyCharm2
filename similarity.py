@@ -45,23 +45,23 @@ def checksimilarity(keyword):
 def original(string1, resultf1, resultf2):
     print('<original>' + string1 + '<original tr>' + str(resultf1) + '<final tr>' + str(resultf2))
 
-with open("input.txt", "r", encoding="UTF-8") as f:#오리지널 단어 번역출력, 유사도 출력
+with open("inputnounmeaning.txt", "r", encoding="UTF-8") as f:#오리지널 단어 번역출력, 유사도 출력
     list = f.readlines()
     for i, data in enumerate(list):
             try:
                 checksimilarity(data)
             except: 0
-    print(round(count1 / 400, 4))
+    print(round(count1 / 265, 4))
     count1 = 0
 
-with open("input5.txt", "r", encoding="UTF-8") as f:
-    list = f.readlines()
-    for i, data in enumerate(list):
-            try:
-                checksimilarity(data)
-            except: 0
+#with open("input5.txt", "r", encoding="UTF-8") as f:
+#    list = f.readlines()
+#    for i, data in enumerate(list):
+#            try:
+#                checksimilarity(data)
+#            except: 0
 
-    print(round(count1 / 400, 4))
+#    print(round(count1 / 400, 4))
 
 #with open("inputfinal.txt", "r", encoding="UTF-8") as f:
 #    list = f.readlines()
