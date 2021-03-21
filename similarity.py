@@ -52,6 +52,8 @@ with open("inputnounmeaning.txt", "r", encoding="UTF-8") as f:#오리지널 단�
                 checksimilarity(data)
             except: 0
     print(round(count1 / 265, 4))
+
+    print(round(count1 / 370, 4))
     count1 = 0
 
 #with open("input5.txt", "r", encoding="UTF-8") as f:
