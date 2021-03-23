@@ -79,7 +79,7 @@ def cut(resultinput):
     else:
         return resultinput
 
-with open("inputnounmeaning.txt", "r", encoding="UTF-8") as f:
+with open("inputfinalplease.txt", "r", encoding="UTF-8") as f:
     list = f.readlines()
     for i, data in enumerate(list):
             try:

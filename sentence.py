@@ -35,16 +35,16 @@ def letcut(string):
     #print("".join(result))
 
     if JONGSUNG_LIST[char3] == ' ':
-        #print("이것은 " + string + "다.")
-        st1 = "이것은 " + string + "다."
-        return st1
+        print("이것은 " + string + "다.")
+        #st1 = "이것은 " + string + "다."
+        #return st1
     else:
-        #print("이것은 " + string + "이다.")
-        st2 = "이것은 " + string +"이다."
-        return st2
+        print("이것은 " + string + "이다.")
+        #st2 = "이것은 " + string +"이다."
+        #return st2
 
 
-with open("input5.txt", "r", encoding="UTF-8") as f:
+with open("inputfinalplease.txt", "r", encoding="UTF-8") as f:
     list = f.readlines()
     #print(str(list))
     for i, data in enumerate(list):

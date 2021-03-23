@@ -45,7 +45,7 @@ def checksimilarity(keyword):
 def original(string1, resultf1, resultf2):
     print('<original>' + string1 + '<original tr>' + str(resultf1) + '<final tr>' + str(resultf2))
 
-with open("inputnounmeaning.txt", "r", encoding="UTF-8") as f:#오리지널 단어 번역출력, 유사도 출력
+with open("inputfinal.txt", "r", encoding="UTF-8") as f:#오리지널 단어 번역출력, 유사도 출력
     list = f.readlines()
     for i, data in enumerate(list):
             try:
