@@ -44,7 +44,7 @@ def letcut(string):
         #return st2
 
 
-with open("inputfinalplease.txt", "r", encoding="UTF-8") as f:
+with open("inputfinal.txt", "r", encoding="UTF-8") as f:
     list = f.readlines()
     #print(str(list))
     for i, data in enumerate(list):

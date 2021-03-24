@@ -51,10 +51,9 @@ with open("inputfinal.txt", "r", encoding="UTF-8") as f:#오리지널 단어 번
             try:
                 checksimilarity(data)
             except: 0
-    print(round(count1 / 265, 4))
+    print(round(count1 / 390, 4))
 
-    print(round(count1 / 370, 4))
-    count1 = 0
+
 
 #with open("input5.txt", "r", encoding="UTF-8") as f:
 #    list = f.readlines()
