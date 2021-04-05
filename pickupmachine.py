@@ -72,6 +72,7 @@ def google(korean, English):
 data_pd = pd.read_excel("D:\A.xls", header=None, index_col=None)
 data_np = pd.DataFrame.to_numpy(data_pd)
 print(data_pd)
+print("구글 번역기")
 
 for i in range(0, 11):
     try:

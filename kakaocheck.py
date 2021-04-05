@@ -9,3 +9,17 @@ from selenium.webdriver.common.keys import Keys
 
 driver = webdriver.Firefox(executable_path="C:/driver/geckodriver.exe")
 driver.wait = WebDriverWait(driver, 2)
+
+URL1 = "https://translate.kakao.com/"
+driver.get(URL1)
+time.sleep(3)
+
+driver.find_element_by_xpath('/html/body/div[3]/div[3]/a/span').click()
+time.sleep(3)
+driver.find_element_by_xpath('//*[@id="query"]').click()
+time.sleep(3)
+driver.find_element_by_xpath('//*[@id="query"]').send_keys("안녕")
+time.sleep(7)
+soup = BeautifulSoup(driver.page_source, "html.parser")
+result = soup.find('p', class_='desc_translation').text
+print(result)
