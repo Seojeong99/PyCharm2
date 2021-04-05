@@ -12,13 +12,13 @@ driver.wait = WebDriverWait(driver, 2)
 
 def google(korean, English):
     # <google tanslate 영어> == <original 영어>
-    URL1 = "https://translate.google.com/?sl=ko&tl=en&op=translate"
+    URL1 = "https://translate.kakao.com/"
     driver.get(URL1)
     time.sleep(3)
 
-    driver.find_element_by_css_selector('.er8xn').clear()
+    driver.find_element_by_css_selector('//*[@id="query"]').clear()
     time.sleep(3)
-    driver.find_element_by_css_selector('.er8xn').send_keys(korean)
+    driver.find_element_by_css_selector('//*[@id="query"]').send_keys(korean)
     time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     result = soup.find('div', class_='NqnNQd').text
