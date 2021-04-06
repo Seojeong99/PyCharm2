@@ -10,9 +10,10 @@ from selenium.webdriver.common.keys import Keys
 driver = webdriver.Firefox(executable_path="C:/driver/geckodriver.exe")
 driver.wait = WebDriverWait(driver, 2)
 
+
 def google(korean, English):
     # <google tanslate 영어> == <original 영어>
-    URL1 = "https://translate.google.co.kr/?hl=ko"
+    URL1 = "https://translate.google.com/?sl=ko&tl=fr&op=translate"
     driver.get(URL1)
     time.sleep(3)
 
@@ -29,9 +30,9 @@ def google(korean, English):
     else:
         print("X")
 
-    #<google tanslate 한글> == <original 한글>
+    # <google tanslate 한글> == <original 한글>
 
-    URL2 = "https://translate.google.com/?sl=en&tl=ko&op=translate"
+    URL2 = "https://translate.google.com/?sl=fr&tl=ko&op=translate"
     driver.get(URL2)
     time.sleep(3)
 
@@ -41,16 +42,17 @@ def google(korean, English):
     time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     googlekorea = soup.find('div', class_='NqnNQd').text
-    print('<google translate 외국어> ' + str(result) + ' <google tanslate 한글> ' + str(googlekorea) + ' <original 한글> '+ korean)
+    print('<google translate 외국어> ' + str(result) + ' <google tanslate 한글> ' + str(
+        googlekorea) + ' <original 한글> ' + korean)
     print('<google tanslate 한글>==<original 한글>?')
     if korean == str(googlekorea):
         print("O")
     else:
         print("X")
 
-    #<google tanslate 한글> == <original 한글>
+    # <google tanslate 한글> == <original 한글>
 
-    URL3 = "https://translate.google.com/?sl=en&tl=ko&op=translate"
+    URL3 = "https://translate.google.com/?sl=fr&tl=ko&op=translate"
     driver.get(URL3)
     time.sleep(3)
 
@@ -60,7 +62,7 @@ def google(korean, English):
     time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     googlekorea2 = soup.find('div', class_='NqnNQd').text
-    print('<original 외국어> ' + English + ' <google tanslate 한글> ' + str(googlekorea2) +' <original 한글> '+ korean)
+    print('<original 외국어> ' + English + ' <google tanslate 한글> ' + str(googlekorea2) + ' <original 한글> ' + korean)
     print('<google tanslate 한글>==<original 한글>?')
     if str(googlekorea2) == korean:
         print("O")
@@ -69,9 +71,10 @@ def google(korean, English):
 
     print('--------------------------------')
 
+
 def naver(korean, English):
     # <papago tanslate 영어> == <original 영어>
-    URL1 = "https://papago.naver.com/"
+    URL1 = "https://papago.naver.com/?sk=ko&tk=fr"
     driver.get(URL1)
     time.sleep(5)
     driver.find_element_by_xpath('//*[@id="txtSource"]').click()
@@ -88,8 +91,8 @@ def naver(korean, English):
         print("X")
 
         # <google tanslate 한글> == <original 한글>
-
-    URL2 = "https://papago.naver.com/"
+    time.sleep(2)
+    URL2 = "https://papago.naver.com/?sk=fr&tk=ko"
     driver.get(URL2)
     time.sleep(3)
 
@@ -109,7 +112,7 @@ def naver(korean, English):
 
     # <papago tanslate 한글> == <original 한글>
 
-    URL3 = "https://papago.naver.com/"
+    URL3 = "https://papago.naver.com/?sk=fr&tk=ko"
     driver.get(URL3)
     time.sleep(3)
 
@@ -128,6 +131,7 @@ def naver(korean, English):
 
     print('--------------------------------')
 
+
 def kakao(korean, English):
     # <Kakao tanslate 영어> == <original 영어>
     URL1 = "https://translate.kakao.com/"
@@ -136,35 +140,48 @@ def kakao(korean, English):
     driver.find_element_by_xpath('//*[@id="query"]').click()
     time.sleep(3)
     driver.find_element_by_xpath('//*[@id="query"]').send_keys(korean)
-    time.sleep(7)
+    time.sleep(3)
+    driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[1]/div[1]/div[2]/a').click()
+    time.sleep(3)
+    driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[1]/div[1]/div[2]/div/ul/li[18]/a').click()
+    time.sleep(5)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     result = soup.find('p', class_='desc_translation').text
-    print('<original 한글> ' + korean + ' <kakao tanslate 외국어> ' + str(result) + ' <kakao 외국어> ' + English)
+    print('<original 한글> ' + korean + ' <kakao tanslate 외국어> ' + str(result) + ' <original 외국어> ' + English)
     print('<kakao translate 외국어>==<original 외국어>?')
     if result == English:
         print("O")
     else:
         print("X")
 
-    #<kakao tanslate 한글> == <original 한글>
+    # <kakao tanslate 한글> == <original 한글>
 
     URL2 = "https://translate.kakao.com/"
     driver.get(URL2)
     time.sleep(3)
+    driver.find_element_by_xpath("/html/body/div[1]/div[2]/div/div[1]/div[1]/div[1]/div[1]/a").click()
+    time.sleep(3)
+    driver.find_element_by_xpath("/html/body/div[1]/div[2]/div/div[1]/div[1]/div[1]/div[1]/div/ul/li[19]/a").click()
+    time.sleep(3)
     driver.find_element_by_xpath('//*[@id="query"]').click()
     time.sleep(3)
     driver.find_element_by_xpath('//*[@id="query"]').send_keys(str(result))
-    time.sleep(7)
+    time.sleep(3)
+    driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[1]/div[1]/div[2]/a').click()
+    time.sleep(3)
+    driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[1]/div[1]/div[2]/div/ul/li[1]/a').click()
+    time.sleep(3)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     googlekorea = soup.find('p', class_='desc_translation').text
-    print('<kakao translate 외국어> ' + str(result) + ' <kakao tanslate 한글> ' + str(googlekorea) + ' <original 한글> '+ korean)
+    print('<kakao translate 외국어> ' + str(result) + ' <kakao tanslate 한글> ' + str(
+        googlekorea) + ' <original 한글> ' + korean)
     print('<kakao tanslate 한글>==<original 한글>?')
     if korean == str(googlekorea):
         print("O")
     else:
         print("X")
 
-    #<kakao tanslate 한글> == <original 한글>
+    # <kakao tanslate 한글> == <original 한글>
 
     URL3 = "https://translate.kakao.com/"
     driver.get(URL3)
@@ -172,10 +189,10 @@ def kakao(korean, English):
     driver.find_element_by_xpath('//*[@id="query"]').click()
     time.sleep(3)
     driver.find_element_by_xpath('//*[@id="query"]').send_keys(English)
-    time.sleep(7)
+    time.sleep(3)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     googlekorea2 = soup.find('p', class_='desc_translation').text
-    print('<original 외국어> ' + English + ' <kakao tanslate 한글> ' + str(googlekorea2) +' <original 한글> '+ korean)
+    print('<original 외국어> ' + English + ' <kakao tanslate 한글> ' + str(googlekorea2) + ' <original 한글> ' + korean)
     print('<kakao tanslate 한글>==<original 한글>?')
     if str(googlekorea2) == korean:
         print("O")
@@ -184,18 +201,70 @@ def kakao(korean, English):
 
     print('--------------------------------')
 
-data_pd = pd.read_excel("D:\A.xls", header=None, index_col=None)
-data_np = pd.DataFrame.to_numpy(data_pd)
-print(data_pd)
+def kakaofirst():
+    URL1 = "https://translate.kakao.com/"
+    driver.get(URL1)
+    time.sleep(3)
+    driver.find_element_by_xpath('/html/body/div[3]/div[3]/a/span').click()
+    time.sleep(3)
 
-for i in range(0, 11):
+data_pd = pd.read_excel("D:\Fr.xls", header=None, index_col=None, sheet_name='Sheet1')
+data_np = pd.DataFrame.to_numpy(data_pd)
+print("~~~~~~~~~지명~~~~~~~~~")
+print("구글 번역기")
+for i in range(1, 443):
     try:
-         data1 = data_np[i][2]
-         data2 = data_np[i][3]
-         print("구글 번역기")
-         google(data1, data2)
-         print("papago 번역기")
-         naver(data1, data2)
-         print("kakao 번역기")
-         kakao(data1, data2)
-    except: 0
+        data1 = data_np[i][2]
+        data2 = data_np[i][3]
+        google(data1, data2)
+    except:
+        0
+
+print("papago 번역기")
+for j in range(1, 443):
+    try:
+        data1 = data_np[j][2]
+        data2 = data_np[j][3]
+        naver(data1, data2)
+    except:
+        0
+
+print("kakao 번역기")
+kakaofirst()
+for k in range(1, 443):
+    try:
+        data1 = data_np[k][2]
+        data2 = data_np[k][3]
+        kakao(data1, data2)
+    except:
+        0
+data_pd = pd.read_excel("D:\Fr.xls", header=None, index_col=None, sheet_name='Sheet2')
+data_np = pd.DataFrame.to_numpy(data_pd)
+print("~~~~~~~~~일반용어~~~~~~~~~")
+print("구글 번역기")
+for i in range(1, 640):
+    try:
+        data1 = data_np[i][2]
+        data2 = data_np[i][3]
+        google(data1, data2)
+    except:
+        0
+
+print("papago 번역기")
+for j in range(1, 640):
+    try:
+        data1 = data_np[j][2]
+        data2 = data_np[j][3]
+        naver(data1, data2)
+    except:
+        0
+
+print("kakao 번역기")
+kakaofirst()
+for k in range(1, 640):
+    try:
+        data1 = data_np[k][2]
+        data2 = data_np[k][3]
+        kakao(data1, data2)
+    except:
+        0

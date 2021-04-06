@@ -19,6 +19,11 @@ time.sleep(3)
 driver.find_element_by_xpath('//*[@id="query"]').click()
 time.sleep(3)
 driver.find_element_by_xpath('//*[@id="query"]').send_keys("안녕")
+time.sleep(3)
+driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[1]/div[1]/div[2]/a').click()
+time.sleep(3)
+driver.find_element_by_xpath('/html/body/div[1]/div[2]/div/div[1]/div[1]/div[1]/div[2]/div/ul/li[6]/a').click()
+
 time.sleep(7)
 soup = BeautifulSoup(driver.page_source, "html.parser")
 result = soup.find('p', class_='desc_translation').text

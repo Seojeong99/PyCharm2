@@ -21,8 +21,8 @@ def naver(korean, English):
     time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     result = soup.find('div', class_='edit_box___1KtZ3 active___3VPGL').text
-    print('<original 한글> ' + korean + ' <papago tanslate 영어> ' + str(result) + ' <original 영어> ' + English)
-    print('<papago translate 영어>==<original 영어>?')
+    print('<original 한글> ' + korean + ' <papago tanslate 외국어> ' + str(result) + ' <original 외국어> ' + English)
+    print('<papago translate 외국어>==<original 외국어>?')
     if result == English:
         print("O")
     else:
@@ -40,7 +40,7 @@ def naver(korean, English):
     time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     googlekorea = soup.find('div', class_='edit_box___1KtZ3 active___3VPGL').text
-    print('<papago translate 영어> ' + str(result) + ' <papago tanslate 한글> ' + str(
+    print('<papago translate 외국어> ' + str(result) + ' <papago tanslate 한글> ' + str(
         googlekorea) + ' <original 한글> ' + korean)
     print('<papago tanslate 한글>==<original 한글>?')
     if korean == str(googlekorea):
@@ -60,7 +60,7 @@ def naver(korean, English):
     time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     googlekorea2 = soup.find('div', class_='edit_box___1KtZ3 active___3VPGL').text
-    print('<original 영어> ' + English + ' <papago tanslate 한글> ' + str(googlekorea2) + ' <original 한글> ' + korean)
+    print('<original 외국어> ' + English + ' <papago tanslate 한글> ' + str(googlekorea2) + ' <original 한글> ' + korean)
     print('<papago tanslate 한글>==<original 한글>?')
     if str(googlekorea2) == korean:
         print("O")

@@ -29,8 +29,8 @@ def kakao(korean, English):
     time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     result = soup.find('p', class_='desc_translation').text
-    print('<original 한글> ' + korean + ' <kakao tanslate 영어> ' + str(result) + ' <kakao 영어> ' + English)
-    print('<kakao translate 영어>==<original 영어>?')
+    print('<original 한글> ' + korean + ' <kakao tanslate 외국어> ' + str(result) + ' <kakao 외국어> ' + English)
+    print('<kakao translate 외국어>==<original 외국어>?')
     if result == English:
         print("O")
     else:
@@ -47,7 +47,7 @@ def kakao(korean, English):
     time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     googlekorea = soup.find('p', class_='desc_translation').text
-    print('<kakao translate 영어> ' + str(result) + ' <kakao tanslate 한글> ' + str(googlekorea) + ' <original 한글> '+ korean)
+    print('<kakao translate 외국어> ' + str(result) + ' <kakao tanslate 한글> ' + str(googlekorea) + ' <original 한글> '+ korean)
     print('<kakao tanslate 한글>==<original 한글>?')
     if korean == str(googlekorea):
         print("O")
@@ -65,7 +65,7 @@ def kakao(korean, English):
     time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     googlekorea2 = soup.find('p', class_='desc_translation').text
-    print('<original 영어> ' + English + ' <kakao tanslate 한글> ' + str(googlekorea2) +' <original 한글> '+ korean)
+    print('<original 외국어> ' + English + ' <kakao tanslate 한글> ' + str(googlekorea2) +' <original 한글> '+ korean)
     print('<kakao tanslate 한글>==<original 한글>?')
     if str(googlekorea2) == korean:
         print("O")
