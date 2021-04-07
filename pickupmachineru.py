@@ -16,7 +16,6 @@ def google(korean, English):
     URL1 = "https://translate.google.com/?sl=ko&tl=ru&op=translate"
     driver.get(URL1)
     time.sleep(3)
-
     driver.find_element_by_css_selector('.er8xn').clear()
     time.sleep(3)
     driver.find_element_by_css_selector('.er8xn').send_keys(korean)
@@ -42,8 +41,7 @@ def google(korean, English):
     time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     googlekorea = soup.find('div', class_='NqnNQd').text
-    print('<google translate 외국어> ' + str(result) + ' <google tanslate 한글> ' + str(
-        googlekorea) + ' <original 한글> ' + korean)
+    print('<google translate 외국어> ' + str(result) + ' <google tanslate 한글> ' + str(googlekorea) + ' <original 한글> ' + korean)
     print('<google tanslate 한글>==<original 한글>?')
     if korean == str(googlekorea):
         print("O")
@@ -58,7 +56,7 @@ def google(korean, English):
 
     driver.find_element_by_css_selector('.er8xn').clear()
     time.sleep(3)
-    driver.find_element_by_css_selector('.er8xn').send_keys(English)
+    driver.find_element_by_css_selector('.er8xn').send_keys(str(English))
     time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     googlekorea2 = soup.find('div', class_='NqnNQd').text
@@ -238,33 +236,33 @@ for k in range(1, 624):
         kakao(data1, data2)
     except:
         0
-data_pd = pd.read_excel("D:\Ru.xls", header=None, index_col=None, sheet_name='Sheet2')
-data_np = pd.DataFrame.to_numpy(data_pd)
-print("~~~~~~~~~일반용어~~~~~~~~~")
-print("구글 번역기")
-for i in range(1, 121):
-    try:
-        data1 = data_np[i][2]
-        data2 = data_np[i][3]
-        google(data1, data2)
-    except:
-        0
+#data_pd = pd.read_excel("D:\Ru.xls", header=None, index_col=None, sheet_name='Sheet2')
+#data_np = pd.DataFrame.to_numpy(data_pd)
+#print("~~~~~~~~~일반용어~~~~~~~~~")
+#print("구글 번역기")
+#for i in range(1, 121):
+#    try:
+#        data1 = data_np[i][2]
+#        data2 = data_np[i][3]
+#        google(data1, data2)
+#    except:
+#        0
 
-print("papago 번역기")
-for j in range(1, 121):
-    try:
-        data1 = data_np[j][2]
-        data2 = data_np[j][3]
-        naver(data1, data2)
-    except:
-        0
+#print("papago 번역기")
+#for j in range(1, 121):
+#    try:
+#        data1 = data_np[j][2]
+#        data2 = data_np[j][3]
+#        naver(data1, data2)
+#    except:
+#        0
 
-print("kakao 번역기")
-kakaofirst()
-for k in range(1, 121):
-    try:
-        data1 = data_np[k][2]
-        data2 = data_np[k][3]
-        kakao(data1, data2)
-    except:
-        0
+#print("kakao 번역기")
+#kakaofirst()
+#for k in range(1, 121):
+#    try:
+#        data1 = data_np[k][2]
+#        data2 = data_np[k][3]
+#        kakao(data1, data2)
+#    except:
+#        0
