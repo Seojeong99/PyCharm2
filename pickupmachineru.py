@@ -31,14 +31,12 @@ def google(korean, English):
 
     # <google tanslate 한글> == <original 한글>
 
-    URL2 = "https://translate.google.com/?sl=ru&tl=ko&op=translate"
+    URL2 = "https://translate.google.com/?sl=ru&tl=ko&text=" + str(result) +"&op=translate"
     driver.get(URL2)
     time.sleep(3)
 
     driver.find_element_by_css_selector('.er8xn').clear()
     time.sleep(3)
-    driver.find_element_by_css_selector('.er8xn').send_keys(str(result))
-    time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     googlekorea = soup.find('div', class_='NqnNQd').text
     print('<google translate 외국어> ' + str(result) + ' <google tanslate 한글> ' + str(googlekorea) + ' <original 한글> ' + korean)
@@ -50,14 +48,12 @@ def google(korean, English):
 
     # <google tanslate 한글> == <original 한글>
 
-    URL3 = "https://translate.google.com/?sl=ru&tl=ko&op=translate"
+    URL3 = "https://translate.google.com/?sl=ru&tl=ko&text=" + str(English) +"&op=translate"
     driver.get(URL3)
     time.sleep(3)
 
     driver.find_element_by_css_selector('.er8xn').clear()
     time.sleep(3)
-    driver.find_element_by_css_selector('.er8xn').send_keys(str(English))
-    time.sleep(7)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     googlekorea2 = soup.find('div', class_='NqnNQd').text
     print('<original 외국어> ' + English + ' <google tanslate 한글> ' + str(googlekorea2) + ' <original 한글> ' + korean)
@@ -214,6 +210,7 @@ for i in range(1, 624):
     try:
         data1 = data_np[i][2]
         data2 = data_np[i][3]
+        #if(data2가 ()가지고 있으면 ()앞에것만 넣어)
         google(data1, data2)
     except:
         0

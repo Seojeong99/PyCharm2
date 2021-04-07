@@ -208,41 +208,12 @@ def kakaofirst():
     driver.find_element_by_xpath('/html/body/div[3]/div[3]/a/span').click()
     time.sleep(4)
 
-data_pd = pd.read_excel("D:\Fr.xls", header=None, index_col=None, sheet_name='Sheet1')
-data_np = pd.DataFrame.to_numpy(data_pd)
-print("~~~~~~~~~지명~~~~~~~~~")
-print("구글 번역기")
-for i in range(423, 443):
-    try:
-        data1 = data_np[i][2]
-        data2 = data_np[i][3]
-        google(data1, data2)
-    except:
-        0
-
-print("papago 번역기")
-for j in range(1, 443):
-    try:
-        data1 = data_np[j][2]
-        data2 = data_np[j][3]
-        naver(data1, data2)
-    except:
-        0
-
-print("kakao 번역기")
-kakaofirst()
-for k in range(1, 443):
-    try:
-        data1 = data_np[k][2]
-        data2 = data_np[k][3]
-        kakao(data1, data2)
-    except:
-        0
-#data_pd = pd.read_excel("D:\Fr.xls", header=None, index_col=None, sheet_name='Sheet2')
+#data_pd = pd.read_excel("D:\Fr.xls", header=None, index_col=None, sheet_name='Sheet1')
 #data_np = pd.DataFrame.to_numpy(data_pd)
-#print("~~~~~~~~~일반용어~~~~~~~~~")
+
+#print("~~~~~~~~~지명~~~~~~~~~")
 #print("구글 번역기")
-#for i in range(1, 640):
+#for i in range(423, 443):
 #    try:
 #        data1 = data_np[i][2]
 #        data2 = data_np[i][3]
@@ -251,13 +222,45 @@ for k in range(1, 443):
 #        0
 
 #print("papago 번역기")
-#for j in range(1, 640):
+#for j in range(1, 443):
 #    try:
 #        data1 = data_np[j][2]
-#       data2 = data_np[j][3]
+#        data2 = data_np[j][3]
 #        naver(data1, data2)
 #    except:
 #        0
+
+#print("kakao 번역기")
+#kakaofirst()
+#for k in range(347, 443):
+#    try:
+#        data1 = data_np[k][2]
+#        data2 = data_np[k][3]
+#        kakao(data1, data2)
+#    except:
+#        0
+data_pd = pd.read_excel("D:\Fr.xls", header=None, index_col=None, sheet_name='Sheet2')
+data_np = pd.DataFrame.to_numpy(data_pd)
+print("~~~~~~~~~일반용어~~~~~~~~~")
+print("구글 번역기")
+for i in range(1, 640):
+    try:
+        data1 = data_np[i][2]
+        data2 = data_np[i][3]
+        google(data1, data2)
+    except:
+        0
+google(data_np[640][2],[640][3])
+
+#print("papago 번역기")
+#for j in range(1, 640):
+#    try:
+#        data1 = data_np[j][2]
+#        data2 = data_np[j][3]
+#        naver(data1, data2)
+#    except:
+#        0
+#naver(data_np[640][2],[640][3])
 
 #print("kakao 번역기")
 #kakaofirst()
@@ -268,3 +271,4 @@ for k in range(1, 443):
 #        kakao(data1, data2)
 #    except:
 #       0
+#kakao(data_np[640][2],[640][3])

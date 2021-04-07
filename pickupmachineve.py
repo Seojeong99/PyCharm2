@@ -240,31 +240,39 @@ def kakaofirst():
 #        0
 data_pd = pd.read_excel("D:\Ve.xls", header=None, index_col=None, sheet_name='Sheet2')
 data_np = pd.DataFrame.to_numpy(data_pd)
-print("~~~~~~~~~일반용어~~~~~~~~~")
-print("구글 번역기")
-for i in range(1, 148):
-    try:
-        data1 = data_np[i][2]
-        data2 = data_np[i][3]
-        google(data1, data2)
-    except:
-        0
 
-print("papago 번역기")
-for j in range(1, 148):
-    try:
-        data1 = data_np[j][2]
-        data2 = data_np[j][3]
-        naver(data1, data2)
-    except:
-        0
+data1 = data_np[148][2]
+data2 = data_np[148][3]
+google(data1, data2)
+naver(data1, data2)
+kakaofirst()
+kakao(data1, data2)
+#print("~~~~~~~~~일반용어~~~~~~~~~")
+#print("구글 번역기")
+#for i in range(1, 148):
+#    try:
+#        data1 = data_np[i][2]
+#        data2 = data_np[i][3]
+#        google(data1, data2)
+#    except:
+#        0
+
+#print("papago 번역기")
+#for j in range(1, 148):
+#    try:
+#        data1 = data_np[j][2]
+#        data2 = data_np[j][3]
+#        naver(data1, data2)
+#    except:
+#        0
 
 print("kakao 번역기")
 kakaofirst()
-for k in range(1, 148):
+for k in range(99, 148):
     try:
         data1 = data_np[k][2]
         data2 = data_np[k][3]
         kakao(data1, data2)
     except:
         0
+
