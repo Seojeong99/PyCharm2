@@ -249,22 +249,25 @@ for i in range(1, 100):
         google(data1, data2)
     except:
         0
+google(data_np[100][2],[100][3])
 
-#print("papago 번역기")
-#for j in range(1, 100):
-#    try:
-#        data1 = data_np[j][2]
-#        data2 = data_np[j][3]
-#        naver(data1, data2)
-#    except:
-#        0
+print("papago 번역기")
+for j in range(1, 100):
+    try:
+        data1 = data_np[j][2]
+        data2 = data_np[j][3]
+        naver(data1, data2)
+    except:
+        0
+naver(data_np[100][2],[100][3])
 
-#print("kakao 번역기")
-#kakaofirst()
-#for k in range(1, 100):
-#    try:
-#        data1 = data_np[k][2]
-#        data2 = data_np[k][3]
-#        kakao(data1, data2)
-#    except:
-#        0
+print("kakao 번역기")
+kakaofirst()
+for k in range(1, 100):
+    try:
+        data1 = data_np[k][2]
+        data2 = data_np[k][3]
+        kakao(data1, data2)
+    except:
+        0
+kakao(data_np[100][2],[100][3])

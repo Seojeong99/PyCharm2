@@ -250,7 +250,7 @@ for i in range(1, 640):
         google(data1, data2)
     except:
         0
-google(data_np[640][2],[640][3])
+google(data_np[640][2],data_np[640][3])
 
 #print("papago 번역기")
 #for j in range(1, 640):
@@ -260,7 +260,7 @@ google(data_np[640][2],[640][3])
 #        naver(data1, data2)
 #    except:
 #        0
-#naver(data_np[640][2],[640][3])
+#naver(data_np[640][2],data_np[640][3])
 
 #print("kakao 번역기")
 #kakaofirst()
@@ -271,4 +271,4 @@ google(data_np[640][2],[640][3])
 #        kakao(data1, data2)
 #    except:
 #       0
-#kakao(data_np[640][2],[640][3])
+#kakao(data_np[640][2],data_np[640][3])

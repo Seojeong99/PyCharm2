@@ -43156,3 +43156,18 @@ console.log: WebExtensions: reset-default-search: No addons in our list are inst
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 1617801612800	Marionette	INFO	Listening on port 62991
 1617801613051	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617802083267	geckodriver	INFO	Listening on 127.0.0.1:63599
+1617802086334	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofilelwo9IL"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617802090669	Marionette	INFO	Listening on port 63607
+1617802091182	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617802127746	geckodriver	INFO	Listening on 127.0.0.1:63677
+1617802130787	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileoXcwE9"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617802135241	Marionette	INFO	Listening on port 63686
+1617802135625	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617803100746	geckodriver	INFO	Listening on 127.0.0.1:63881
+1617803103789	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\이서정\\AppData\\Local\\Temp\\rust_mozprofileKEpeNF"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1617803108135	Marionette	INFO	Listening on port 63889
+1617803108610	Marionette	WARN	TLS certificate errors will be ignored for this session
