@@ -252,16 +252,16 @@ def outspace(resultinput):
 data_pd = pd.read_excel("D:\Ru.xls", header=None, index_col=None, sheet_name='Sheet2')
 data_np = pd.DataFrame.to_numpy(data_pd)
 print("~~~~~~~~~일반용어~~~~~~~~~")
-print("구글 번역기")
-for i in range(1, 121):
-    try:
-        data1 = data_np[i][2]
-        data2 = data_np[i][3]
-        google(data1, data2)
-    except:
-        0
-data4 = outspace(data_np[121], [3])
-google(data_np[121][2], data4)
+#print("구글 번역기")
+#for i in range(1, 121):
+#    try:
+#        data1 = data_np[i][2]
+#        data2 = data_np[i][3]
+#        google(data1, data2)
+#    except:
+#        0
+#data4 = outspace(data_np[121], [3])
+#google(data_np[121][2], data4)
 
 print("papago 번역기")
 for j in range(1, 121):
@@ -271,8 +271,8 @@ for j in range(1, 121):
         naver(data1, data2)
     except:
         0
-data4 = outspace(data_np[121], [3])
-naver(data_np[121][2], data4)
+#data4 = outspace(data_np[121], [3])
+#naver(data_np[121][2], data4)
 
 print("kakao 번역기")
 kakaofirst()
@@ -283,5 +283,5 @@ for k in range(1, 121):
         kakao(data1, data2)
     except:
         0
-data4 = outspace(data_np[121], [3])
-kakao(data_np[121][2], data4)
+#data4 = outspace(data_np[121], [3])
+#kakao(data_np[121][2], data4)
