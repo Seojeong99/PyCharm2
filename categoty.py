@@ -12,7 +12,7 @@ driver = webdriver.Firefox(executable_path="C:/driver/geckodriver.exe")
 driver.wait = WebDriverWait(driver, 2)
 
 
-def checksimilarity(keyword):
+def checksimilarity(akeyword):
         global count1
         URL3 = "https://translate.google.com/?sl=ko&tl=en&op=translate"
         driver.get(URL3)
